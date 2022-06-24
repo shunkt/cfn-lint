@@ -5422,8 +5422,8 @@
       ]
     },
     "AWS Migration Hub Refactor Spaces": {
-      "ARNFormat": "arn:aws:refactor-spaces:${Region}:${Account}:${ResourceType}/${RelativeId}",
-      "ARNRegex": "^arn:aws:refactor-spaces:.+",
+      "ARNFormat": "arn:${Partition}:refactor-spaces:${Region}:${Account}:${ResourceType}/${RelativeId}",
+      "ARNRegex": "^arn:${Partition}:refactor-spaces:.+",
       "Actions": [
         "CreateApplication",
         "CreateEnvironment",
@@ -5447,7 +5447,8 @@
         "ListTagsForResource",
         "PutResourcePolicy",
         "TagResource",
-        "UntagResource"
+        "UntagResource",
+        "UpdateRoute"
       ],
       "HasResource": true,
       "StringPrefix": "refactor-spaces",
@@ -12926,22 +12927,6 @@
         "aws:RequestTag/${TagKey}",
         "aws:ResourceTag/${TagKey}",
         "aws:TagKeys"
-      ]
-    },
-    "Amazon Macie Classic": {
-      "Actions": [
-        "AssociateMemberAccount",
-        "AssociateS3Resources",
-        "DisassociateMemberAccount",
-        "DisassociateS3Resources",
-        "ListMemberAccounts",
-        "ListS3Resources",
-        "UpdateS3Resources"
-      ],
-      "HasResource": false,
-      "StringPrefix": "macie",
-      "conditionKeys": [
-        "aws:SourceArn"
       ]
     },
     "Amazon Managed Blockchain": {

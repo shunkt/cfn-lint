@@ -447,6 +447,7 @@
   "AWSWAFConsoleReadOnlyAccess": "arn:aws:iam::aws:policy/AWSWAFConsoleReadOnlyAccess",
   "AWSWAFFullAccess": "arn:aws:iam::aws:policy/AWSWAFFullAccess",
   "AWSWAFReadOnlyAccess": "arn:aws:iam::aws:policy/AWSWAFReadOnlyAccess",
+  "AWSWellArchitectedOrganizationsServiceRolePolicy": "arn:aws:iam::aws:policy/aws-service-role/AWSWellArchitectedOrganizationsServiceRolePolicy",
   "AWSXRayDaemonWriteAccess": "arn:aws:iam::aws:policy/AWSXRayDaemonWriteAccess",
   "AWSXrayFullAccess": "arn:aws:iam::aws:policy/AWSXrayFullAccess",
   "AWSXrayReadOnlyAccess": "arn:aws:iam::aws:policy/AWSXrayReadOnlyAccess",
